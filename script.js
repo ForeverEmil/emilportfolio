@@ -1,0 +1,71 @@
+$(window).scroll(function () {
+    var elem = $('.logo');
+    var hdr = $('.nav-header');
+    var sci = $('.sci');
+    setTimeout(function () {
+        elem.css({ "opacity": "1", "transition": "0.5s" });
+        hdr.css({ "opacity": "1", "transition": "0.5s" });
+        sci.css({ "opacity": "1", "transition": "0.5s" });
+    }, 2000);
+    elem.css({ "opacity": "0", "transition": "0.5s" });
+    hdr.css({ "opacity": "0", "transition": "0.5s" });
+    sci.css({ "opacity": "0", "transition": "0.5s" });
+});
+
+function toggle() {
+    var main = document.getElementById('main');
+    var nav = document.getElementById('navigation');
+    var hdr = document.getElementById('hdr');
+    var asd = document.getElementById('asd')
+    main.classList.toggle('active');
+    nav.classList.toggle('active');
+    hdr.classList.toggle('active');
+    asd.classList.toggle('active');
+}
+/*
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("nav-header").style.top = "0";
+    } else {
+        document.getElementById("nav-header").style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
+}
+*/
+/*
+$(window).scroll(function () {
+    var elem = $('#toggle');
+    setTimeout(function () {
+        elem.css({ "opacity": "1", "transition": "0.5s" });
+    }, 2000);
+    elem.css({ "opacity": "0", "transition": "0.5s" });
+});
+*/
+
+
+// observer
+const tabs = document.querySelectorAll(".tab")
+const pages = document.querySelectorAll(".banner")
+const scrollToTop = document.querySelector(".scrollToTop")
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const index = Array.from(pages).indexOf(entry.target)
+            tabs.forEach(tab => {
+                tab.classList.remove("activeTab")
+            })
+            tabs[index].classList.add("activeTab")
+        }
+    })
+}, {
+    threshold: 0.25,
+})
+
+
+pages.forEach(page => {
+    observer.observe(page)
+})
+
