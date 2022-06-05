@@ -1,3 +1,4 @@
+// opacity on scroll
 $(window).scroll(function () {
     var elem = $('.logo');
     var hdr = $('.nav-header');
@@ -12,6 +13,7 @@ $(window).scroll(function () {
     sci.css({ "opacity": "0", "transition": "0.5s" });
 });
 
+// toggle navbar
 function toggle() {
     var main = document.getElementById('main');
     var nav = document.getElementById('navigation');
@@ -22,28 +24,6 @@ function toggle() {
     hdr.classList.toggle('active');
     asd.classList.toggle('active');
 }
-/*
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("nav-header").style.top = "0";
-    } else {
-        document.getElementById("nav-header").style.top = "-100px";
-    }
-    prevScrollpos = currentScrollPos;
-}
-*/
-/*
-$(window).scroll(function () {
-    var elem = $('#toggle');
-    setTimeout(function () {
-        elem.css({ "opacity": "1", "transition": "0.5s" });
-    }, 2000);
-    elem.css({ "opacity": "0", "transition": "0.5s" });
-});
-*/
-
 
 // observer
 const tabs = document.querySelectorAll(".tab")

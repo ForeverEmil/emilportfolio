@@ -155,7 +155,6 @@ header #toggle:after {
     background: conic-gradient(from 135deg at 60% -20%, #2C394B, #082032, #51728c, #D2D2D2);
 }
 
-/*f46a4e*/
 #navigation {
     position: fixed;
     top: 0;
@@ -325,8 +324,6 @@ header #toggle:after {
     }
 
     .content-discr img {
-        /* width: 150px;
-        height: 200px; */
         display: none;
     }
 
@@ -355,17 +352,7 @@ header #toggle:after {
         margin: 5px 0px;
     }
 
-    .sci {
-        /* position: absolute;*/
-        /* bottom: 50px; */
-        /* right: initial; */
-        /* flex-direction: row; */
-
-    }
-
     .sci li a {
-        /* margin: initial; */
-        /* margin-right: 10px; */
         width: 40px;
         height: 40px;
     }
@@ -395,11 +382,6 @@ header #toggle:after {
 
     .content-discr {
         flex-direction: column;
-    }
-
-    .content-discr img {
-        /* width: 130px;
-        height: 160px; */
     }
 
     .wrapper.active {
