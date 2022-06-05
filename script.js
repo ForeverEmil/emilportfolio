@@ -1,5 +1,5 @@
 // opacity on scroll
-window.scroll(function () {
+$(window).scroll(function () {
     var elem = $('.logo');
     var hdr = $('.nav-header');
     var sci = $('.sci');
