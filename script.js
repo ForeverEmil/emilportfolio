@@ -4,13 +4,13 @@ $(window).scroll(function () {
     var hdr = $('.nav-header');
     var sci = $('.sci');
     setTimeout(function () {
-        elem.css({ "opacity": "1", "transition": "0.5s" });
-        hdr.css({ "opacity": "1", "transition": "0.5s" });
-        sci.css({ "opacity": "1", "transition": "0.5s" });
+        elem.css({ "opacity": "1", "transition": "0.7s" });
+        hdr.css({ "opacity": "1", "transition": "0.7s" });
+        sci.css({ "opacity": "1", "transition": "0.7s" });
     }, 2000);
-    elem.css({ "opacity": "0", "transition": "0.5s" });
-    hdr.css({ "opacity": "0", "transition": "0.5s" });
-    sci.css({ "opacity": "0", "transition": "0.5s" });
+    elem.css({ "opacity": "0", "transition": "0.7s" });
+    hdr.css({ "opacity": "0", "transition": "0.7s" });
+    sci.css({ "opacity": "0", "transition": "0.7s" });
 });
 
 // toggle navbar
