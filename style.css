@@ -307,6 +307,11 @@ header #toggle:after {
     border-radius: 2rem;
 }
 
+.list__skills li {
+    display: inline-block;
+    font-size: 2rem;
+}
+
 .content-box a {
     margin: 0 7px;
 }
@@ -315,7 +320,7 @@ header #toggle:after {
     font-size: 1rem;
     color: var(--main-color);
     font-weight: 300;
-    min-height: 166px;
+    min-height: 130px;
 }
 
 .aside {
